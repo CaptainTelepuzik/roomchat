@@ -1,1 +1,13 @@
-<div class="AddRoom__wrapper"></div>
+<div class="AddRoom__wrapper radius-border shadows full-size flex flex-center">
+    <div class="AddRoom__windows radius-border shadows">
+        <div class="AddRoom__close flex flex-item-center flex-justify-end">
+            <i class = "fa fa-times" @click="closeForm" ></i>
+        </div>
+        <div class="AddRoom__form flex flex-column flex-center full-size">
+            <input class="AddRoom__input flex flex-center" type="text" placeholder="Введите название комнаты "/>
+            <input class="AddRoom__input flex flex-center " type="date"/>
+
+            <button class="AddRoom__button flex"
+                    @click="addRoom">Сохранить</button></div>
+</div>
+</div>

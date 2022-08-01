@@ -9,17 +9,30 @@
 
     export default {
         name: "V-Controller",
-        components:{
-          AddRoom, RegistrRoom, ChatRoom
+        components: {
+            AddRoom, RegistrRoom, ChatRoom
         },
-        data(){
-            return{
-                rooms:[{
+        data() {
+            return {
+                rooms: [{
                     title: "",
-                    message:[]
+                    message: []
                 }],
                 addFormVisible: false,
-                indexTask:0
+                indexTask: 0
+            }
+        },
+        methods: {
+            closeAddRoom() {
+                this.addFormVisible = false;
+            },
+
+            AddRoom() {
+                this.addFormVisible = true;
+            },
+            addButtonClick() {
+                this.addFormVisible = true;
+
             }
         }
     }

@@ -1,7 +1,8 @@
 <template src="./template.html"/>
 <script>
     export default {
-        name: "V-RegistrRoom"
+        name: "V-RegistrRoom",
+        props:["elementIndex","data"],
     }
 </script>
 

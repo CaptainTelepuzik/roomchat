@@ -2,7 +2,8 @@
 
 <script>
     export default {
-        name: "V-Room"
+        name: "V-Room",
+
     }
 </script>
 
