@@ -3,6 +3,7 @@
 <script>
     export default {
         name: "V-Room",
+        props:['data','elementIndex']
 
     }
 </script>

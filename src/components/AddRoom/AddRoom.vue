@@ -3,7 +3,7 @@
 <script>
     export default {
         name: "V-AddRoom",
-        props: ['indexTask'],
+        props: ['indexRoom'],
         beforeMount() {
             this.room = {...this.defaultRoom}
         },
@@ -11,17 +11,18 @@
             return {
                 room: null,
                 defaultRoom: {
-                    title: "",
-                    message: []
+                    title: ""
                 }
             }
         },
         methods: {
             closeForm() {
-                this.$emit('close');
+              this.room = null;
+              this.$emit('close');
             },
             addRoom() {
                 this.$emit('addRoom', {id: this.indexRoom, ...this.room});
+                this.room = null;
                 this.closeForm()
             }
         }

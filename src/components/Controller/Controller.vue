@@ -19,7 +19,7 @@
                     message: []
                 }],
                 addFormVisible: false,
-                indexTask: 0
+                indexRoom: 0
             }
         },
         methods: {
@@ -27,8 +27,9 @@
                 this.addFormVisible = false;
             },
 
-            AddRoom() {
-                this.addFormVisible = true;
+            AddRoom(roomData) {
+                this.indexRoom++
+                this.rooms[0].title.push(roomData)
             },
             addButtonClick() {
                 this.addFormVisible = true;
