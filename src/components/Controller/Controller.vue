@@ -16,7 +16,7 @@
             return {
                 rooms: [{
                     title: "",
-                    message: []
+                    message: [],
                 }],
                 addFormVisible: false,
                 indexRoom: 0
@@ -29,7 +29,7 @@
 
             AddRoom(roomData) {
                 this.indexRoom++
-                this.rooms[0].title.push(roomData)
+                this.rooms.push(roomData)
             },
             addButtonClick() {
                 this.addFormVisible = true;

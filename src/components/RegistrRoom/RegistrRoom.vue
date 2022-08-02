@@ -4,9 +4,14 @@
 import Room from "@/components/Room/Room";
 
     export default {
-        name: "V-RegistrRoom",
-        props:["elementIndex","data"],
-        components:Room
+      name: "V-RegistrRoom",
+      props: ["elementIndex", "data"],
+      components: {Room},
+      methods:{
+        addButtonClick(){
+          this.$emit('addButtonClick');
+        }
+      }
     }
 </script>
 
