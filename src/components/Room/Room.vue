@@ -1,9 +1,12 @@
 <template src="./template.html"/>
 
 <script>
+    import chatRoom from "@/components/ChatRoom/ChatRoom";
+
     export default {
         name: "V-Room",
-        props:['data','elementIndex']
+        props:['data','elementIndex'],
+        components: {chatRoom}
 
     }
 </script>

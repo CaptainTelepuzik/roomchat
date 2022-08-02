@@ -12,6 +12,11 @@
     :data="item"
     v-for="(item, index) in rooms"
     @addButtonClick="addButtonClick"
+    @addButtonRoom="addButtonRoom"
+    />
+
+    <Room
+            v-if="addRoomVisible"
 
     />
 </div>

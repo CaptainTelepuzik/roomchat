@@ -10,6 +10,9 @@ import Room from "@/components/Room/Room";
       methods:{
         addButtonClick(){
           this.$emit('addButtonClick');
+        },
+        addButtonRoom(){
+          this.$emit('addButtonRoom');
         }
       }
     }

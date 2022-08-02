@@ -5,12 +5,12 @@
 
     import AddRoom from "@/components/AddRoom/AddRoom";
     import RegistrRoom from "@/components/RegistrRoom/RegistrRoom";
-    import ChatRoom from "@/components/ChatRoom/ChatRoom";
+    import Room from "@/components/Room/Room";
 
     export default {
         name: "V-Controller",
         components: {
-            AddRoom, RegistrRoom, ChatRoom
+            AddRoom, RegistrRoom, Room,
         },
         data() {
             return {
@@ -19,6 +19,7 @@
                     message: [],
                 }],
                 addFormVisible: false,
+                addRoomVisible: false,
                 indexRoom: 0
             }
         },
@@ -33,8 +34,10 @@
             },
             addButtonClick() {
                 this.addFormVisible = true;
-
-            }
+            },
+            addButtonRoom() {
+            this.addRoomVisible = true;
+          }
         }
     }
 </script>
